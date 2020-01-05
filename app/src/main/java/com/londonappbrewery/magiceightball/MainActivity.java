@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button askButton = (Button) findViewById(R.id.askButton);
+        Button askButton =  findViewById(R.id.askButton);
 
-        final ImageView ball = (ImageView) findViewById(R.id.image8ball);
+        final ImageView ball =  findViewById(R.id.image8ball);
 
 
         final int[] ballArray =  {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Random randomGenerator = new Random();
 
-                int myNumber = randomGenerator.nextInt(6);
+                int myNumber = randomGenerator.nextInt(5);
 
                 Log.d("8ball", "Wylosowano kule nr : "+myNumber);
 
